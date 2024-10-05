@@ -1,0 +1,4 @@
+name: snapshots
+version: '1.0-SNAPSHOT'
+main: com.sovdee.snapshots.Snapshots
+api-version: '1.21'
