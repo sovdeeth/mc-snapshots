@@ -1,5 +1,6 @@
 package com.sovdee.snapshots;
 
+import com.sovdee.snapshots.textures.Textures;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.util.RayTraceResult;
@@ -48,7 +49,7 @@ public class RayHit {
     }
 
     Color getPixel() {
-        BufferedImage texture = Textures.getTexture(hitBlock.getType()).getTexture(Side.fromBlockFace(hitFace));
+        BufferedImage texture = Textures.getTexture(hitBlock.getType()).getTexture(Side.fromBlockFace(hitFace), hitBlock);
         return new Color(texture.getRGB((int) uv.getX(), (int) uv.getY()));
     }
 

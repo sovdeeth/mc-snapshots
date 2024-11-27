@@ -1,5 +1,7 @@
 package com.sovdee.snapshots;
 
+import com.sovdee.snapshots.textures.BlockTexture;
+import com.sovdee.snapshots.textures.Textures;
 import org.bukkit.Material;
 import org.bukkit.plugin.java.JavaPlugin;
 
